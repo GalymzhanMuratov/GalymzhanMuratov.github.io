@@ -26,7 +26,11 @@
                 <span class="burger__dec"></span>
             </button>
             <a href="#" class="header__logo">
-                <img src="img/header-logo.png" alt="Лого Blanchard">
+                <picture>
+                    <source media="(min-width: 401px)" srcset="./img/header-logo.png">
+                    <source media="(max-width: 400px)" srcset="./img/header-logo-m.png">
+                    <img src="./img/header-logo.png" alt="логотип Blanchard">
+                </picture>
             </a>
             <nav class="header__nav nav">
                 <ul class="nav__list flex">

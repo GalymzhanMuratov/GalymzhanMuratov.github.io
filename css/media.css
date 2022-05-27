@@ -1,18 +1,18 @@
 @media (min-width:1921px) {
     .hslide1 {
-        background-image: url("/img/hbg1-r.jpg");
+        background-image: url("../img/hbg1-r.jpg");
     }
 
     .hslide2 {
-        background-image: url("/img/hbg2-r.jpg");
+        background-image: url("../img/hbg2-r.jpg");
     }
 
     .hslide3 {
-        background-image: url("/img/hbg3-r.jpg");
+        background-image: url("../img/hbg3-r.jpg");
     }
 
     .gallery {
-        background-image: url("/img/gbg-r.jpg");
+        background-image: url("../img/gbg-r.jpg");
     }
 }
 
@@ -37,13 +37,23 @@
         margin: 0 50px;
     }
 
+    /* .header__container {
+        justify-content: space-between;
+    } */
+
     .header__burger {
         display: inline-block;
         position: relative;
     }
 
     .header__logo {
-        margin: 0 auto;
+        margin-right: 0;
+        margin-left: calc(50% - 36px);
+        transform: translateX(-50%);
+    }
+
+    .header__asearch {
+        margin-left: auto;
     }
 
     .header__nav {
@@ -213,23 +223,23 @@
     }
 
     .ebg1 {
-        background-image: url("/img/ebg1-ht.jpg");
+        background-image: url("../img/ebg1-ht.jpg");
     }
 
     .ebg2 {
-        background-image: url("/img/ebg2-ht.jpg");
+        background-image: url("../img/ebg2-ht.jpg");
     }
 
     .ebg3 {
-        background-image: url("/img/ebg3-ht.jpg");
+        background-image: url("../img/ebg3-ht.jpg");
     }
 
     .ebg4 {
-        background-image: url("/img/ebg4-ht.jpg");
+        background-image: url("../img/ebg4-ht.jpg");
     }
 
     .ebg5 {
-        background-image: url("/img/ebg5-ht.jpg");
+        background-image: url("../img/ebg5-ht.jpg");
     }
 
     .events__wrap {
@@ -314,23 +324,23 @@
     }
 
     .ebg1 {
-        background-image: url("/img/ebg1-t.jpg");
+        background-image: url("../img/ebg1-t.jpg");
     }
 
     .ebg2 {
-        background-image: url("/img/ebg2-t.jpg");
+        background-image: url("../img/ebg2-t.jpg");
     }
 
     .ebg3 {
-        background-image: url("/img/ebg3-t.jpg");
+        background-image: url("../img/ebg3-t.jpg");
     }
 
     .ebg4 {
-        background-image: url("/img/ebg4-t.jpg");
+        background-image: url("../img/ebg4-t.jpg");
     }
 
     .ebg5 {
-        background-image: url("/img/ebg5-t.jpg");
+        background-image: url("../img/ebg5-t.jpg");
     }
 
     .projects__card {
@@ -371,6 +381,14 @@
     .about, .cat, .gallery, .events, .projects {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+
+    .header {
+        min-height: 45px;
+    }
+
+    .header__container {
+        height: 45px;
     }
 
     .hero__container {
@@ -415,15 +433,15 @@
     }
 
     .hslide1 {
-        background-image: url(/img/hbg1-m.jpg);
+        background-image: url("../img/hbg1-m.jpg");
     }
 
     .hslide2 {
-        background-image: url(/img/hbg2-m.jpg);
+        background-image: url("../img/hbg2-m.jpg");
     }
 
     .hslide3 {
-        background-image: url(/img/hbg3-m.jpg);
+        background-image: url("../img/hbg3-m.jpg");
     }
 
     .about__txt {
