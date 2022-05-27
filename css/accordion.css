@@ -1,0 +1,195 @@
+/* Please wrap your collapsible content in a single element or so help me Must add a transition or it breaks because that's the whole purpose of this Only one transition-duration works (see explanation on line #141 in JS) You can add more to an inner wrapper (.details-styling) */
+.collapse-init summary+* {
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
+}
+
+/* Closed state. Any CSS transitions work here The JS has a height calculation to make sliding opened/closed easier, but it's not necessary Remove the height prop for a simple toggle on/off (after all that work I did for you?) */
+.collapse-init :not(.panel-active) summary+* {
+    height: 0;
+    opacity: 0;
+    transform: scale(0.9);
+    transform-origin: bottom center;
+}
+
+.collapse-init summary {
+    list-style: none;
+}
+
+.collapse-init summary::-webkit-details-marker {
+    display: none;
+}
+
+/* .collapse-init summary::before {
+    display: none;
+} */
+.collapse-init summary {
+    cursor: pointer;
+}
+
+/* This element exists so .details-wrapper has no extra margin/padding that can screw with the smooth height collapse You can style .details-wrapper decoratively but avoid anything that modifies the box and add it to .details-styling instead Otherwise, this element is totally optional. Remove if you hate divitis */
+.details-styling {
+    padding: 25px;
+}
+
+::selection {
+    background: #fbcb6a;
+    color: #4d4433;
+}
+
+[type=checkbox] {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+[type=checkbox]+label {
+    background: #efe7fd;
+    border-left: 4px solid #5b13ec;
+    cursor: pointer;
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+    transition: 0.1s;
+    padding: 0.75em 1em;
+}
+
+[type=checkbox]+label::before {
+    border: 2px solid;
+    border-radius: 2px;
+    color: #5b13ec;
+    content: '';
+    display: inline-block;
+    margin-right: 0.75ch;
+    transition: 0.1s;
+    width: 1ch;
+    height: 1ch;
+    vertical-align: baseline;
+}
+
+[type=checkbox]:focus+label {
+    outline: 2px solid #5b13ec;
+}
+
+[type=checkbox]:checked+label::before {
+    background: currentColor;
+    box-shadow: inset 0 0 0 2px #fff;
+}
+
+/* .container {
+    box-shadow: 0.2em 1em 2em -1em #d6d1e0;
+    margin: 2.4em 0;
+} */
+details {
+    background: #fff;
+    border-top: 1px solid #cacaca;
+    border-bottom: 0;
+    list-style: none;
+}
+
+/* details:first-child {
+    border-radius: 6px 6px 0 0;
+} */
+details:last-child {
+    border-bottom: 1px solid #cacaca;
+    border-radius: 0 0 6px 6px;
+}
+
+summary {
+    display: block;
+    transition: 0.2s;
+    font-weight: 700;
+    padding: 40px 0;
+    transition-property: border color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+summary span {
+    background: none;
+    transition: color 0.2s ease-in, background-color 0.2s ease-in;
+}
+
+.collapse-init summary::after {
+    content: url("/img/ihatearrows.svg");
+    float: right;
+    width: 50px;
+    height: 45px;
+    text-align: center;
+    margin-top: -10px;
+    padding-top: 5px;
+    border-radius: 50%;
+    background-color: #ececec;
+    /* transform: rotate(90deg); */
+    transition: inherit;
+}
+
+summary:hover {
+    border-top: 1px solid var(--hovercolor);
+    border-bottom: 1px solid var(--hovercolor);
+    color: var(--purple);
+}
+
+summary:hover:after {
+    background-color: var(--outlinecolor);
+}
+
+summary:focus {
+    border-top: 1px solid var(--hovercolor);
+    border-bottom: 1px solid var(--hovercolor);
+    color: #fff;
+}
+
+summary:focus span {
+    background-color: var(--purple);
+}
+
+summary:active {
+    border-top: 1px solid var(--activecolor);
+    border-bottom: 1px solid var(--activecolor);
+    color: var(--activecolor);
+}
+
+summary:active span {
+    background: none;
+}
+
+
+[open] summary {
+    border-top: 1px solid var(--hovercolor);
+    border-bottom: 1px solid var(--hovercolor);
+    background: #fff;
+    color: var(--hovercolor);
+}
+
+[open] summary span {
+    background: none;
+}
+
+[open] summary::after {
+    border: 1px solid var(--purple);
+    color: #000;
+    /* text-align: ; */
+    /* margin-top: 0.5em; */
+    background-color: var(--outlinecolor);
+    transform: rotate(180deg);
+}
+
+.accordion__link:hover {
+    color: var(--hovercolor);
+    text-decoration: underline var(--hovercolor);
+}
+
+.accordion__link:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--purple);
+}
+
+.accordion__link:active {
+    color: var(--activecolor);
+    text-decoration: none;
+    background: none;
+}
