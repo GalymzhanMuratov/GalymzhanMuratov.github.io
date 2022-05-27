@@ -113,7 +113,7 @@ summary span {
 }
 
 .collapse-init summary::after {
-    content: url("/img/ihatearrows.svg");
+    content: url("../img/ihatearrows.svg");
     float: right;
     width: 50px;
     height: 45px;

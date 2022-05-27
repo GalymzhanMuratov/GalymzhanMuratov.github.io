@@ -174,7 +174,7 @@ button {
 
 .select-selected::after {
   position: absolute;
-  content: url("/img/arrow.svg");
+  content: url("../img/arrow.svg");
   top: 0px;
   right: 15px;
   width: 10px;
@@ -182,7 +182,7 @@ button {
 }
 
 .select-selected.select-arrow-active:after {
-  content: url("/img/arrow-r.svg");
+  content: url("../img/arrow-r.svg");
 }
 
 .select-items div, .select-selected {
@@ -276,7 +276,7 @@ button {
 .nav__login {
   padding-left: 20px;
   color: #fff;
-  background-image: url("/img/login.svg");
+  background-image: url("../img/login.svg");
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: center;
@@ -284,7 +284,7 @@ button {
 }
 
 .nav__login:hover {
-  background-image: url("/img/login-h.svg");
+  background-image: url("../img/login-h.svg");
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: center;
@@ -292,7 +292,7 @@ button {
 
 .nav__login:active {
   background-color: transparent !important;
-  background-image: url("/img/login-a.svg");
+  background-image: url("../img/login-a.svg");
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: center;
@@ -804,15 +804,15 @@ input.input__search::-ms-input-placeholder {
 }
 
 .hslide1 {
-  background-image: url("/img/hbg1.jpg");
+  background-image: url("../img/hbg1.jpg");
 }
 
 .hslide2 {
-  background-image: url("/img/hbg2.jpg");
+  background-image: url("../img/hbg2.jpg");
 }
 
 .hslide3 {
-  background-image: url("/img/hbg3.jpg");
+  background-image: url("../img/hbg3.jpg");
 }
 
 /* .swiper-wrapper1 {
@@ -840,7 +840,7 @@ input.input__search::-ms-input-placeholder {
 
 .gallery {
   padding-bottom: 80px;
-  background-image: url("/img/gbg.jpg");
+  background-image: url("../img/gbg.jpg");
 }
 
 .gallery_title {
@@ -888,7 +888,7 @@ input.input__search::-ms-input-placeholder {
 }
 
 .gallery__card:hover::after {
-  content: url("/img/zoom.svg");
+  content: url("../img/zoom.svg");
   position: absolute;
   top: 6.5%;
   left: 6.5%;
@@ -941,7 +941,7 @@ input.input__search::-ms-input-placeholder {
 }
 
 .gallery-swiper-button-prev::after, .gallery-swiper-button-next::after {
-  content: url("/img/arrow.svg");
+  content: url("../img/arrow.svg");
   position: absolute;
   text-align: center;
   color: #fff;
@@ -1141,23 +1141,23 @@ input.input__search::-ms-input-placeholder {
 }
 
 .ebg1 {
-  background-image: url("/img/ebg1.jpg");
+  background-image: url("../img/ebg1.jpg");
 }
 
 .ebg2 {
-  background-image: url("/img/ebg2.jpg");
+  background-image: url("../img/ebg2.jpg");
 }
 
 .ebg3 {
-  background-image: url("/img/ebg3.jpg");
+  background-image: url("../img/ebg3.jpg");
 }
 
 .ebg4 {
-  background-image: url("/img/ebg4.jpg");
+  background-image: url("../img/ebg4.jpg");
 }
 
 .ebg5 {
-  background-image: url("/img/ebg5.jpg");
+  background-image: url("../img/ebg5.jpg");
 }
 
 .events__wrap {
@@ -1234,7 +1234,7 @@ input.input__search::-ms-input-placeholder {
 }
 
 .events-swiper-button-prev span::after {
-  content: url("/img/arrow-b.svg");
+  content: url("../img/arrow-b.svg");
   position: absolute;
   top: 5px;
   left: 20px;
@@ -1242,7 +1242,7 @@ input.input__search::-ms-input-placeholder {
 }
 
 .events-swiper-button-next span::after {
-  content: url("/img/arrow-b.svg");
+  content: url("../img/arrow-b.svg");
   position: absolute;
   top: 12px;
   left: 20px;
@@ -1299,75 +1299,75 @@ input.input__search::-ms-input-placeholder {
 }
 
 .pbg1 {
-  background-image: url("/img/proj1.svg");
+  background-image: url("../img/proj1.svg");
 }
 
 .pbg2 {
-  background-image: url("/img/proj2.svg");
+  background-image: url("../img/proj2.svg");
 }
 
 .pbg3 {
-  background-image: url("/img/proj3.svg");
+  background-image: url("../img/proj3.svg");
 }
 
 .pbg4 {
-  background-image: url("/img/proj4.svg");
+  background-image: url("../img/proj4.svg");
 }
 
 .pbg5 {
-  background-image: url("/img/proj5.svg");
+  background-image: url("../img/proj5.svg");
 }
 
 .pbg6 {
-  background-image: url("/img/proj6.svg");
+  background-image: url("../img/proj6.svg");
 }
 
 .pbg7 {
-  background-image: url("/img/proj7.svg");
+  background-image: url("../img/proj7.svg");
 }
 
 .pbg8 {
-  background-image: url("/img/proj8.svg");
+  background-image: url("../img/proj8.svg");
 }
 
 .pbg9 {
-  background-image: url("/img/proj9.svg");
+  background-image: url("../img/proj9.svg");
 }
 
 .pbg1:hover, .pbg1:active, .projects__bg:focus-within .pbg1 {
-  background-image: url("/img/proj-act1.svg");
+  background-image: url("../img/proj-act1.svg");
 }
 
 .pbg2:hover, .pbg2:active, .projects__bg:focus-within .pbg2 {
-  background-image: url("/img/proj-act2.svg");
+  background-image: url("../img/proj-act2.svg");
 }
 
 .pbg3:hover, .pbg3:active, .projects__bg:focus-within .pbg3 {
-  background-image: url("/img/proj-act3.svg");
+  background-image: url("../img/proj-act3.svg");
 }
 
 .pbg4:hover, .pbg4:active, .projects__bg:focus-within .pbg4 {
-  background-image: url("/img/proj-act4.svg");
+  background-image: url("../img/proj-act4.svg");
 }
 
 .pbg5:hover, .pbg5:active, .projects__bg:focus-within .pbg5 {
-  background-image: url("/img/proj-act5.svg");
+  background-image: url("../img/proj-act5.svg");
 }
 
 .pbg6:hover, .pbg6:active, .projects__bg:focus-within .pbg6 {
-  background-image: url("/img/proj-act6.svg");
+  background-image: url("../img/proj-act6.svg");
 }
 
 .pbg7:hover, .pbg7:active, .projects__bg:focus-within .pbg7 {
-  background-image: url("/img/proj-act7.svg");
+  background-image: url("../img/proj-act7.svg");
 }
 
 .pbg8:hover, .pbg8:active, .projects__bg:focus-within .pbg8 {
-  background-image: url("/img/proj-act8.svg");
+  background-image: url("../img/proj-act8.svg");
 }
 
 .pbg9:hover, .pbg9:active, .projects__bg:focus-within .pbg9 {
-  background-image: url("/img/proj-act9.svg");
+  background-image: url("../img/proj-act9.svg");
 }
 
 .projects-swiper-button-prev, .projects-swiper-button-next {
@@ -1399,7 +1399,7 @@ input.input__search::-ms-input-placeholder {
 }
 
 .projects-swiper-button-prev span::after, .projects-swiper-button-next span::after {
-  content: url("/img/temp.svg");
+  content: url("../img/temp.svg");
   position: absolute;
   top: 0px;
   left: 10px;
