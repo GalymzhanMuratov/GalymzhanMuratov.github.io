@@ -56,6 +56,10 @@
         margin-left: auto;
     }
 
+    .header__search {
+        left: 32px;
+    }
+
     .header__nav {
         display: none;
     }

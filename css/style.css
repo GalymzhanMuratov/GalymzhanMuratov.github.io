@@ -270,7 +270,10 @@ button {
 }
 
 .nav__wrap:focus-within .nav__login {
+  padding-left: 24px;
+  /* background-image: url("../img/login-h.svg"); */
   background-color: var(--activecolor);
+  background-position-x: 4px;
 }
 
 .nav__login {
@@ -496,8 +499,8 @@ button {
 .scroll-wrap__link::before {
   position: absolute;
   content: "";
-  height: 40px;
-  width: 222px;
+  height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
   background-image: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4));
@@ -638,7 +641,7 @@ button {
   position: absolute;
   height: 22px;
   width: 22px;
-  left: 32px;
+  left: -32px;
   top: 5px;
   border: none;
   background-size: 100%;
@@ -1094,6 +1097,7 @@ input.input__search::-ms-input-placeholder {
 }
 
 .accordion__link {
+  padding: 6px 4px 6px 0;
   color: #333333;
   text-decoration: none;
   background: none;
@@ -1127,14 +1131,17 @@ input.input__search::-ms-input-placeholder {
   max-width: 498px;
   /* width: 498px; */
   height: 700px;
-  outline: 1px solid #CACACA;
-  border-bottom: 1px solid #CACACA;
+  /* outline: 1px solid #CACACA; */
+  /* border: 1px solid #CACACA; */
 }
 
 .events__bg {
   max-width: 500px;
   max-height: 300px;
-  width: 100%;
+  border-top: 1px solid #CACACA;
+  border-right: 1px solid #CACACA;
+  border-left: 1px solid #CACACA;
+  width: calc(100% - 2px);
   height: 100%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1167,7 +1174,9 @@ input.input__search::-ms-input-placeholder {
   justify-content: flex-start;
   height: 400px;
   padding: 0 50px;
-
+  border-bottom: 1px solid #CACACA;
+  border-right: 1px solid #CACACA;
+  border-left: 1px solid #CACACA;
 }
 
 .events__descr {
@@ -1568,6 +1577,7 @@ input.input__search::-ms-input-placeholder {
   margin-right: 20px;
   /* height: 50px;
   width: 50px; */
+  transition: path .8s ease;
 }
 
 .socials__link:hover path {

@@ -84,8 +84,8 @@
 } */
 details {
     background: #fff;
-    border-top: 1px solid #cacaca;
-    border-bottom: 0;
+    /* border-top: 1px solid #cacaca;
+    border-bottom: 1px solid transparent; */
     list-style: none;
 }
 
@@ -99,10 +99,12 @@ details:last-child {
 
 summary {
     display: block;
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid transparent;
     transition: 0.2s;
     font-weight: 700;
     padding: 40px 0;
-    transition-property: border color;
+    transition-property: border, color;
     transition-duration: 0.2s;
     transition-timing-function: ease-in;
 }
