@@ -29,7 +29,7 @@
 
 /* This element exists so .details-wrapper has no extra margin/padding that can screw with the smooth height collapse You can style .details-wrapper decoratively but avoid anything that modifies the box and add it to .details-styling instead Otherwise, this element is totally optional. Remove if you hate divitis */
 .details-styling {
-    padding: 25px;
+    padding: 25px 0;
 }
 
 ::selection {
@@ -128,6 +128,11 @@ summary span {
     transition: inherit;
 }
 
+/* .collapse-init summary::after {
+    content: url("../img/acc.svg");
+    float: right;
+} */
+
 summary:hover {
     border-top: 1px solid var(--hovercolor);
     border-bottom: 1px solid var(--hovercolor);
@@ -173,8 +178,6 @@ summary:active span {
 [open] summary::after {
     border: 1px solid var(--purple);
     color: #000;
-    /* text-align: ; */
-    /* margin-top: 0.5em; */
     background-color: var(--outlinecolor);
     transform: rotate(180deg);
 }
