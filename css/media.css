@@ -860,6 +860,10 @@
         line-height: 32px;
     }
 
+    .projects__txt {
+        margin-bottom: 10px;
+    }
+
     .pl-t {
         display: none;
     }
@@ -871,6 +875,10 @@
     .projects__card {
         width: 193px;
         height: 63px;
+    }
+
+    .projects__bg {
+        background-size: 60% 40%;
     }
 
     .location {
@@ -937,6 +945,10 @@
     .footer {
         padding-top: 20px;
         height: 112px;
+    }
+
+    .footer__logo {
+        padding-top: 10px;
     }
 
     .footer__container {
