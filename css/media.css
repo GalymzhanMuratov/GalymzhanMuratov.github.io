@@ -804,6 +804,10 @@
         margin-bottom: 11px;
     }
 
+    .cat-left__txt {
+        max-width: 289px;
+    }
+
     .cat__subtitle {
         line-height: 36px;
     }
@@ -843,6 +847,7 @@
 
     .projects {
         padding-top: 40px;
+        padding-bottom: 0;
     }
 
     .projects__wrapper {
@@ -850,8 +855,17 @@
     }
 
     .projects__subtitle {
+        margin-bottom: 12px;
         font-size: 18px;
         line-height: 32px;
+    }
+
+    .pl-t {
+        display: none;
+    }
+
+    .pl-m {
+        display: block;
     }
 
     .projects__card {
@@ -859,14 +873,28 @@
         height: 63px;
     }
 
+    .location {
+        padding-bottom: 10px;
+    }
+
+    .location__wrap {
+        margin-right: 0;
+    }
+
     .location__title {
+        margin-bottom: 0;
         font-size: 18px;
         line-height: 24px;
     }
 
     .location__details {
+        margin-bottom: 18px;
         font-size: 14px;
         line-height: 19px;
+    }
+
+    .location__form {
+        margin-bottom: 20px;
     }
 
     .location__input {
@@ -876,13 +904,23 @@
     }
 
     .location__btn {
-        padding: 12px 35px;
+        padding: 10px 32px;
         font-size: 12px;
         line-height: 16px;
     }
 
     .location__btn span {
         display: none;
+    }
+
+    .contacts__txt {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .contacts__link {
+        margin-right: 15px;
     }
 
     .contacts__link svg {

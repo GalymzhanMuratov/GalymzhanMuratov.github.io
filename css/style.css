@@ -1671,3 +1671,7 @@ input.input__search::-ms-input-placeholder {
 .pl-t {
   display: none;
 }
+
+.pl-m {
+  display: none;
+}
