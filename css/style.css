@@ -1300,13 +1300,18 @@ input.input__search::-ms-input-placeholder {
 
 .projects__txt {
   position: relative;
-  margin-bottom: 16px;
-  max-width: 1080px;
+  margin-bottom: 20px;
+  max-width: 1079px;
 }
 
 
 .tooltip__marker {
-  vertical-align: middle;
+  display: inline-block;
+  font-size: 0;
+}
+
+.tooltip__marker svg {
+  display: block;
 }
 
 
@@ -1502,10 +1507,10 @@ input.input__search::-ms-input-placeholder {
 
 .location__title {
   display: inline-block;
-  margin-bottom: 7px;
+  margin-bottom: 0;
   font-weight: 600;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 32px;
 }
 
 .location__details {
@@ -1650,4 +1655,19 @@ input.input__search::-ms-input-placeholder {
 
 .socials__link:last-child {
   margin-right: 0;
+}
+
+/**/
+
+.projects__tempworkaround {
+  display: inline;
+  line-height: 32px;
+}
+
+.projects__tempworkaround:nth-child(4) {
+  line-height: 30px;
+}
+
+.pl-t {
+  display: none;
 }

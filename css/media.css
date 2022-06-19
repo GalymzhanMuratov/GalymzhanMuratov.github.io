@@ -384,9 +384,9 @@
         align-items: flex-start;
     }
 
-    .location__title {
+    /* .location__title {
         margin-bottom: 7px;
-    }
+    } */
 
     .location__details {
         margin-bottom: 17px;
@@ -546,7 +546,16 @@
     }
 
     .projects__txt {
-        margin-bottom: 20px;
+        max-width: 656px;
+        margin-bottom: 24px;
+    }
+
+    .pl-t {
+        display: inline;
+    }
+
+    .pl-d {
+        display: none;
     }
 
     .projects__card {
@@ -572,6 +581,11 @@
         width: 100%;
         margin-bottom: 12px;
         padding: 10px 28px 11px 24px;
+    }
+
+    .location__details {
+        margin-bottom: 22px;
+        font-size: 14px;
     }
 
     .location__input:last-of-type {
