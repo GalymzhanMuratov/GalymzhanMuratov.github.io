@@ -125,7 +125,7 @@ summary span {
     border-radius: 50%;
     background-color: #ececec;
     /* transform: rotate(90deg); */
-    transition: inherit;
+    transition: background-color 0.2s linear;
 }
 
 /* .collapse-init summary::after {

@@ -116,8 +116,7 @@ button {
   padding: 4px 6px;
   text-decoration: none;
   color: var(--purple);
-  transition: color 0.2s ease-in;
-  transition: background 0.2s ease-in;
+  transition: color 0.2s ease-in, background 0.2s ease-in;
 }
 
 .link:focus {
@@ -145,6 +144,10 @@ button {
 
 .projects__container, .events__container, .gallery__content2, .hero__content {
   position: relative;
+}
+
+* {
+  scroll-behavior: smooth;
 }
 
 .about, .cat, .gallery, .events, .projects {
@@ -206,6 +209,10 @@ button {
   z-index: 99;
 }
 
+.select-items div {
+  transition: background-color 0.4s linear;
+}
+
 .select-hide {
   display: none;
 }
@@ -262,11 +269,13 @@ button {
 }
 
 .nav__item {
-  margin-right: 62px;
+  margin-right: 56px;
+  margin-left: -6px;
 }
 
+
 .nav__link {
-  padding: 4px 0;
+  padding: 4px 6px;
   font-size: 18px;
   font-weight: 600;
   color: #fff;
@@ -279,6 +288,7 @@ button {
 
 .nav__wrap:focus-within .nav__login {
   padding-left: 24px;
+  padding-right: 6px;
   /* background-image: url("../img/login-h.svg"); */
   background-color: var(--activecolor);
   background-position-x: 4px;
@@ -362,6 +372,7 @@ button {
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.85);
   background: rgba(0, 0, 0, 0);
+  transition: all 0.3s ease;
 }
 
 .search__input:hover {
@@ -417,11 +428,12 @@ button {
 .nav-direction__item {
   position: relative;
   margin-right: 92px;
+  margin-left: -6px;
 }
 
 .nav-direction__link {
-  padding: 0;
-  padding-right: 20px;
+  /* padding: 0;
+  padding-right: 20px; */
   font-size: 18px;
   line-height: 25px;
   border: none;
@@ -580,9 +592,9 @@ button {
   display: block;
 }
 
-/* .nav-direction__link {
+.nav-direction__link {
   padding: 4px 20px 4px 6px;
-} */
+}
 
 .nav-direction__link::after {
   position: absolute;
@@ -619,10 +631,12 @@ button {
 .nav-direction__link:focus {
   /* padding: 4px 24px 4px 6px; */
   outline: none;
+  color: #fff;
   background-color: var(--activecolor);
 }
 
 .nav-direction__link:focus::after {
+  border-color: #fff;
   left: calc(100% - 15px);
 }
 
@@ -787,13 +801,12 @@ input.input__search::-ms-input-placeholder {
   line-height: 25px;
   color: #fff;
   background-color: var(--purple);
-  transition-property: all;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .hero__btn:hover {
   outline: 3px solid var(--outlinecolor);
+  outline-offset: 0;
 }
 
 .hero__btn:focus {
@@ -897,6 +910,10 @@ input.input__search::-ms-input-placeholder {
   width: fit-content;
 }
 
+.gallery__card:hover {
+  cursor: pointer;
+}
+
 .mySwiper2 {
   max-height: 350px;
 }
@@ -944,6 +961,7 @@ input.input__search::-ms-input-placeholder {
   height: 28px;
   border-radius: 50%;
   background-color: #666666;
+  transition: background-color 0.4s ease;
 }
 
 .gallery-swiper-button-prev:hover, .gallery-swiper-button-next:hover {
@@ -972,8 +990,8 @@ input.input__search::-ms-input-placeholder {
 }
 
 .gallery-swiper-button-next::after {
-  top: 15px;
-  left: -2px;
+  top: 13px;
+  left: -4px;
   transform: rotate(0.75turn);
 }
 
@@ -1002,6 +1020,12 @@ input.input__search::-ms-input-placeholder {
   cursor: pointer;
   height: 0;
   width: 0;
+}
+
+.form__radio span {
+  transition-property: color, border;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 
 .checkmark {
@@ -1131,6 +1155,7 @@ input.input__search::-ms-input-placeholder {
 
 .accordion__left {
   margin-right: 36px;
+  margin-left: 14px;
   display: inline-block;
   outline: 2px solid #B7B7B7;
   outline-offset: 12px;
@@ -1244,6 +1269,7 @@ input.input__search::-ms-input-placeholder {
   border: 2px solid transparent;
   border-radius: 50%;
   background-color: #ECECEC;
+  transition: background-color 0.3s linear, border 0.3s linear;
 }
 
 .events-swiper-button-prev:hover, .events-swiper-button-next:hover {
@@ -1447,6 +1473,7 @@ input.input__search::-ms-input-placeholder {
   border: 2px solid transparent;
   border-radius: 50%;
   background-color: #ececec;
+  transition: background-color 0.3s linear, border 0.3s linear;
 }
 
 .projects-swiper-button-prev:hover, .projects-swiper-button-next:hover {
@@ -1531,6 +1558,7 @@ input.input__search::-ms-input-placeholder {
   border-radius: 100px;
   line-height: 30px;
   background: none;
+  transition: all 0.3s ease;
 }
 
 .location__input:hover {
@@ -1591,9 +1619,9 @@ input.input__search::-ms-input-placeholder {
   height: 50px;
   padding: 0;
   margin-right: 6px;
-
   text-align: center;
   background: none;
+  transition: opacity 0.2s linear;
 }
 
 .contacts__link svg {
@@ -1638,7 +1666,10 @@ input.input__search::-ms-input-placeholder {
 .socials__link {
   display: inline-block;
   margin-right: 16px;
-  transition: path .8s ease;
+}
+
+.socials__link path {
+  transition: fill 0.3s linear;
 }
 
 .socials__link:hover path {
