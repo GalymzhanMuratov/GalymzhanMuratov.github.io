@@ -1301,7 +1301,7 @@ input.input__search::-ms-input-placeholder {
   content: url("../img/arrow-b.svg");
   position: absolute;
   top: 5px;
-  left: 20px;
+  left: 18px;
   transform: rotate(0.5turn);
 }
 
@@ -1333,6 +1333,7 @@ input.input__search::-ms-input-placeholder {
 
 .tooltip__marker {
   display: inline-block;
+  vertical-align: middle;
   font-size: 0;
 }
 
@@ -1390,6 +1391,7 @@ input.input__search::-ms-input-placeholder {
   background-repeat: no-repeat;
   background-position: center center;
   /* background-size: 80% 50%; */
+  transition: background-image 0.4s ease-in-out;
 }
 
 .pbg1 {
@@ -1690,19 +1692,16 @@ input.input__search::-ms-input-placeholder {
 
 /**/
 
-.projects__tempworkaround {
-  display: inline;
-  line-height: 32px;
-}
-
-.projects__tempworkaround:nth-child(4) {
-  line-height: 30px;
-}
-
 .pl-t {
   display: none;
 }
 
 .pl-m {
   display: none;
+}
+
+.swiper-button-disabled, .swiper-button-disabled {
+  opacity: .35;
+  cursor: auto;
+  pointer-events: none;
 }
