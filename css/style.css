@@ -860,7 +860,7 @@ input.input__search::-ms-input-placeholder {
 }
 
 .about__txt {
-  max-width: 1080px;
+  max-width: 1090px;
 }
 
 
@@ -1327,7 +1327,7 @@ input.input__search::-ms-input-placeholder {
 .projects__txt {
   position: relative;
   margin-bottom: 20px;
-  max-width: 1079px;
+  max-width: 1065px;
 }
 
 
@@ -1704,4 +1704,8 @@ input.input__search::-ms-input-placeholder {
   opacity: .35;
   cursor: auto;
   pointer-events: none;
+}
+
+.accordion__link:hover {
+  color: var(--activecolor);
 }

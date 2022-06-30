@@ -117,12 +117,13 @@ summary span {
 .collapse-init summary::after {
     content: url("../img/ihatearrows.svg");
     float: right;
-    width: 50px;
-    height: 45px;
+    width: 48px;
+    height: 43px;
     text-align: center;
-    margin-top: -10px;
+    margin-top: -9px;
     padding-top: 5px;
     border-radius: 50%;
+    border: 1px solid transparent;
     background-color: #ececec;
     /* transform: rotate(90deg); */
     transition: background-color 0.2s linear;
@@ -165,10 +166,10 @@ summary:active span {
 
 
 [open] summary {
-    border-top: 1px solid var(--hovercolor);
-    border-bottom: 1px solid var(--hovercolor);
+    border-top: 1px solid var(--activecolor);
+    border-bottom: 1px solid var(--activecolor);
     background: #fff;
-    color: var(--hovercolor);
+    color: var(--activecolor);
 }
 
 [open] summary span {
@@ -183,8 +184,7 @@ summary:active span {
 }
 
 .accordion__link:hover {
-    color: var(--hovercolor);
-    text-decoration: underline var(--hovercolor);
+    color: var(--activecolor);
 }
 
 .accordion__link:focus {

@@ -221,12 +221,8 @@
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper swiper-wrapper1">
                             <div class="swiper-slide swiper-slide1 hslide1"></div>
-                            <div class="swiper-slide swiper-slide1 hslide2"
-                                style="background-image: url('./img/hbg2.jpg')">
-                            </div>
-                            <div class="swiper-slide swiper-slide1 hslide3"
-                                style="background-image: url('./img/hbg3.jpg')">
-                            </div>
+                            <div class="swiper-slide swiper-slide1 hslide2"></div>
+                            <div class="swiper-slide swiper-slide1 hslide3"></div>
                         </div>
                     </div>
                     <div class="hero__subwrap">
@@ -724,10 +720,10 @@
             <div class="container projects__container">
                 <h2 class="projects__title title">Проекты</h2>
                 <p class="projects__txt">
-                    Предварительные выводы: постоянное информационно- пропагандистское обеспечение нашей деятельности
+                    Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности
                     однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые
                     государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего
-                    возрастает их статус бесполезности. Прежде всего, постоянное информационно- пропагандистское
+                    возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское
                     <span class="tooltip__marker" id="t1">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -951,140 +947,14 @@
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
     <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-    <script type="text/javascript">
-        ymaps.ready(init);
-        function init() {
-            var myMap = new ymaps.Map("map", {
-                center: [55.76200123126051, 37.61114912723088],
-                zoom: 14
-            });
-            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            }, {
-                preset: 'islands#circleIcon',
-                iconColor: '#9D5CD0'
-            }),
-                myMap.geoObjects
-                    .add(myPlacemark)
-        };
-
-    </script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script defer src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
-
+    <script src="js/script.js"></script>
     <script src="js/modernizr3.6.0.js"></script>
     <script src="js/accordion.js"></script>
-    <!-- <script src="js/core.js"></script> -->
-    <script src="js/script.js"></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            loop: true,
-            autoplay: {
-                delay: 5000,
-            },
-        });
-        var swiper2 = new Swiper(".mySwiper2", {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            pagination: {
-                el: ".gallery-swiper-pagination",
-                type: 'fraction',
-                clickable: false,
-            },
-            navigation: {
-                nextEl: '.gallery-swiper-button-next',
-                prevEl: '.gallery-swiper-button-prev',
-            },
-
-            breakpoints: {
-                1441: {
-                    slidesPerView: 3,
-                    spaceBetween: 50,
-                    slidesPerGroup: 3,
-                },
-                769: {
-                    slidesPerView: 2,
-                    spaceBetween: 34,
-                },
-                401: {
-                    slidesPerView: 2,
-                    spaceBetween: 38,
-                    slidesPerGroup: 2,
-                },
-            }
-        });
-        var swiper3 = new Swiper(".mySwiper3", {
-            slidesPerView: 1,
-            navigation: {
-                nextEl: '.events-swiper-button-next',
-                prevEl: '.events-swiper-button-prev',
-            },
-            pagination: {
-                el: ".events-swiper-pagination",
-                clickable: true,
-            },
-
-            breakpoints: {
-                1441: {
-                    slidesPerView: 3,
-                    spaceBetween: 50,
-                },
-                769: {
-                    spaceBetween: 27,
-                    slidesPerView: 3,
-                    slidesPerGroup: 3,
-                    pagination: {
-                        el: ".events-swiper-pagination",
-                        clickable: true,
-                    },
-                },
-                401: {
-                    slidesPerView: 2,
-                    spaceBetween: 34,
-                    slidesPerGroup: 2,
-                    pagination: {
-                        el: ".events-swiper-pagination",
-                        clickable: true,
-                    },
-                }
-            }
-        });
-        var swiper4 = new Swiper(".mySwiper4", {
-            slidesPerView: 1,
-            navigation: {
-                nextEl: '.projects-swiper-button-next',
-                prevEl: '.projects-swiper-button-prev',
-
-            },
-            breakpoints: {
-                1441: {
-                    slidesPerView: 3,
-                    spaceBetween: 50,
-                },
-                769: {
-                    slidesPerView: 2,
-                    spaceBetween: 50,
-                },
-                401: {
-                    slidesPerView: 2,
-                    spaceBetween: 34,
-                },
-            }
-        });
-    </script>
-    <script>
-        tippy('#t1', {
-            content: 'Пример современных тенденций - современная методология разработки ',
-            interactive: true,
-        });
-        tippy('#t2', {
-            content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
-            interactive: true,
-        });
-        tippy('#t3', {
-            content: 'В стремлении повысить качество',
-            interactive: true,
-        });
-    </script>
+    <script src="js/mapconf.js"></script>
+    <script src="js/swiperconf.js"></script>
+    <script src="js/tippyconf.js"></script>
 </body>
 
 </html>
