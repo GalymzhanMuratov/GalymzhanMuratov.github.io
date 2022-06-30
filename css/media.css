@@ -494,6 +494,18 @@
         height: 27px;
     }
 
+    .hslide1 {
+        background-image: url('../img/hbg1-t.jpg');
+    }
+
+    .hslide2 {
+        background-image: url('../img/hbg2-t.jpg');
+    }
+
+    .hslide3 {
+        background-image: url('../img/hbg3-t.jpg');
+    }
+
     .gallery {
         padding-bottom: 69px;
     }
