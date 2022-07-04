@@ -227,13 +227,9 @@
         width: 280px;
     }
 
-    .select-items div, .select-selected {
+    .dropdown__list-item, #dropdown__selected {
         padding: 3px 16px;
         line-height: 28px;
-    }
-
-    .select-selected::after {
-        top: 4px;
     }
 
     .cat__txt {
@@ -785,11 +781,13 @@
 
     .gallery__content2 {
         display: flex;
+        min-width: 0;
         margin-top: 0;
         flex-direction: column-reverse;
     }
 
     .mySwiper2 {
+        min-width: 0;
         margin-bottom: 6px;
         max-height: none;
     }

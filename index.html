@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/accordion.css">
+    <link rel="stylesheet" href="css/select.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
@@ -262,118 +263,134 @@
                     <h2 class="gallery_title title">Галерея</h2>
                     <label class="gallery__label" for="gallery-sel">Фильтр:</label>
                     <div class="gallery__subwrap">
-                        <div class="gallery__select custom-select">
-                            <select name="Галерея" id="gallery-sel">
-                                <option>Живопись</option>
-                                <option>Живопись</option>
-                                <option>Рисунок</option>
-                                <option>Скульптура</option>
-                            </select>
-                        </div>
+                        <ul class="dropdown gallery__select">
+                            <li role="button" aria-labelledby="dropdown-label" id="dropdown__selected" tabindex="0">
+                                Живопись
+                            </li>
+                            <svg class="dropdown__arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 1L6 6.00001L0.999997 1" stroke="white" />
+                            </svg>
+                            <li aria-expanded="false" role="list" class="dropdown__list-container">
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__list-item" tabindex="0" id="option-1">
+                                        Живопись
+                                    </li>
+                                    <li class="dropdown__list-item" tabindex="0" id="option-2">
+                                        Рисунок
+                                    </li>
+                                    <li class="dropdown__list-item" tabindex="0" id="option-3">
+                                        Скульптура
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                     <form action="#" class="form gallery__form flex">
                         <label class="form__radio" for="period1">
-                            <input type="checkbox" name="period" id="period1">
+                            <input type="checkbox" class="check__rep" name="period" id="period1">
                             <span class="checkmark"></span>
                             <span>XIX век</span>
                         </label>
                         <label class="form__radio" for="period2">
-                            <input type="checkbox" name="period" id="period2" checked>
+                            <input type="checkbox" class="check__rep" name="period" id="period2" checked>
                             <span class="checkmark"></span>
                             <span>XX век</span>
                         </label>
                         <label class="form__radio" for="period3">
-                            <input type="checkbox" name="period" id="period3">
+                            <input type="checkbox" class="check__rep" name="period" id="period3">
                             <span class="checkmark"></span>
                             <span>Современность</span>
                         </label>
                     </form>
                 </div>
                 <div class="gallery__content2">
-                    <div class="gallery__btnwrap">
-                        <div class="gallery-swiper-button-prev"></div>
-                        <div class="gallery-swiper-pagination"></div>
-                        <div class="gallery-swiper-button-next"></div>
-                    </div>
-                    <div class="swiper mySwiper2">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide gallery__slide">
-                                <div class="gallery__card">
-                                    <picture>
-                                        <!-- Retina изображения для picture еще не добавлены -->
-                                        <source media="(min-width: 1441px)" srcset="./img/gbg1.jpg">
-                                        <source media="(min-width: 769px) and (max-width: 1440px)"
-                                            srcset="./img/gbg1-ht.jpg">
-                                        <source media="(min-width: 401px) and (max-width: 768px)"
-                                            srcset="./img/gbg1-t.jpg">
-                                        <source media="(max-width:400px)" srcset="./img/gbg1-m.jpg">
-                                        <img src="./img/gbg1.jpg" alt="">
-                                    </picture>
+                    <div style="min-width: 0;">
+                        <div class="gallery__btnwrap">
+                            <div class="gallery-swiper-button-prev"></div>
+                            <div class="gallery-swiper-pagination"></div>
+                            <div class="gallery-swiper-button-next"></div>
+                        </div>
+                        <div class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide gallery__slide" tabindex="0">
+                                    <div class="gallery__card">
+                                        <picture>
+                                            <!-- Retina изображения для picture еще не добавлены -->
+                                            <source media="(min-width: 1441px)" srcset="./img/gbg1.jpg">
+                                            <source media="(min-width: 769px) and (max-width: 1440px)"
+                                                srcset="./img/gbg1-ht.jpg">
+                                            <source media="(min-width: 401px) and (max-width: 768px)"
+                                                srcset="./img/gbg1-t.jpg">
+                                            <source media="(max-width:400px)" srcset="./img/gbg1-m.jpg">
+                                            <img src="./img/gbg1.jpg" alt="">
+                                        </picture>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide gallery__slide">
-                                <div class="gallery__card">
-                                    <picture>
-                                        <source media="(min-width: 1441px)" srcset="./img/gbg2.jpg">
-                                        <source media="(min-width: 769px) and (max-width: 1440px)"
-                                            srcset="./img/gbg2-ht.jpg">
-                                        <source media="(min-width: 401px) and (max-width: 768px)"
-                                            srcset="./img/gbg2-t.jpg">
-                                        <source media="(max-width:400px)" srcset="./img/gbg2-m.jpg">
-                                        <img src="./img/gbg2.jpg" alt="">
-                                    </picture>
+                                <div class="swiper-slide gallery__slide" tabindex="0">
+                                    <div class="gallery__card">
+                                        <picture>
+                                            <source media="(min-width: 1441px)" srcset="./img/gbg2.jpg">
+                                            <source media="(min-width: 769px) and (max-width: 1440px)"
+                                                srcset="./img/gbg2-ht.jpg">
+                                            <source media="(min-width: 401px) and (max-width: 768px)"
+                                                srcset="./img/gbg2-t.jpg">
+                                            <source media="(max-width:400px)" srcset="./img/gbg2-m.jpg">
+                                            <img src="./img/gbg2.jpg" alt="">
+                                        </picture>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide gallery__slide">
-                                <div class="gallery__card">
-                                    <picture>
-                                        <source media="(min-width: 1441px)" srcset="./img/gbg3.jpg">
-                                        <source media="(min-width: 769px) and (max-width: 1440px)"
-                                            srcset="./img/gbg3-ht.jpg">
-                                        <source media="(min-width: 401px) and (max-width: 768px)"
-                                            srcset="./img/gbg3-t.jpg">
-                                        <source media="(max-width:400px)" srcset="./img/gbg3-m.jpg">
-                                        <img src="./img/gbg3.jpg" alt="">
-                                    </picture>
+                                <div class="swiper-slide gallery__slide" tabindex="0">
+                                    <div class="gallery__card">
+                                        <picture>
+                                            <source media="(min-width: 1441px)" srcset="./img/gbg3.jpg">
+                                            <source media="(min-width: 769px) and (max-width: 1440px)"
+                                                srcset="./img/gbg3-ht.jpg">
+                                            <source media="(min-width: 401px) and (max-width: 768px)"
+                                                srcset="./img/gbg3-t.jpg">
+                                            <source media="(max-width:400px)" srcset="./img/gbg3-m.jpg">
+                                            <img src="./img/gbg3.jpg" alt="">
+                                        </picture>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide gallery__slide">
-                                <div class="gallery__card">
-                                    <picture>
-                                        <source media="(min-width: 1441px)" srcset="./img/gbg4.jpg">
-                                        <source media="(min-width: 769px) and (max-width: 1440px)"
-                                            srcset="./img/gbg4-ht.jpg">
-                                        <source media="(min-width: 401px) and (max-width: 768px)"
-                                            srcset="./img/gbg4-t.jpg">
-                                        <source media="(max-width:400px)" srcset="./img/gbg4-m.jpg">
-                                        <img src="./img/gbg4.jpg" alt="">
-                                    </picture>
+                                <div class="swiper-slide gallery__slide" tabindex="0">
+                                    <div class="gallery__card">
+                                        <picture>
+                                            <source media="(min-width: 1441px)" srcset="./img/gbg4.jpg">
+                                            <source media="(min-width: 769px) and (max-width: 1440px)"
+                                                srcset="./img/gbg4-ht.jpg">
+                                            <source media="(min-width: 401px) and (max-width: 768px)"
+                                                srcset="./img/gbg4-t.jpg">
+                                            <source media="(max-width:400px)" srcset="./img/gbg4-m.jpg">
+                                            <img src="./img/gbg4.jpg" alt="">
+                                        </picture>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide gallery__slide">
-                                <div class="gallery__card">
-                                    <picture>
-                                        <source media="(min-width: 1441px)" srcset="./img/gbg5.jpg">
-                                        <source media="(min-width: 769px) and (max-width: 1440px)"
-                                            srcset="./img/gbg5-ht.jpg">
-                                        <source media="(min-width: 401px) and (max-width: 768px)"
-                                            srcset="./img/gbg5-t.jpg">
-                                        <source media="(max-width:400px)" srcset="./img/gbg5-m.jpg">
-                                        <img src="./img/gbg5.jpg" alt="">
-                                    </picture>
+                                <div class="swiper-slide gallery__slide" tabindex="0">
+                                    <div class="gallery__card">
+                                        <picture>
+                                            <source media="(min-width: 1441px)" srcset="./img/gbg5.jpg">
+                                            <source media="(min-width: 769px) and (max-width: 1440px)"
+                                                srcset="./img/gbg5-ht.jpg">
+                                            <source media="(min-width: 401px) and (max-width: 768px)"
+                                                srcset="./img/gbg5-t.jpg">
+                                            <source media="(max-width:400px)" srcset="./img/gbg5-m.jpg">
+                                            <img src="./img/gbg5.jpg" alt="">
+                                        </picture>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide gallery__slide">
-                                <div class="gallery__card">
-                                    <picture>
-                                        <source media="(min-width: 1441px)" srcset="./img/gbg6.jpg">
-                                        <source media="(min-width: 769px) and (max-width: 1440px)"
-                                            srcset="./img/gbg6-ht.jpg">
-                                        <source media="(min-width: 401px) and (max-width: 768px)"
-                                            srcset="./img/gbg6-t.jpg">
-                                        <source media="(max-width:400px)" srcset="./img/gbg6-m.jpg">
-                                        <img src="./img/gbg6.jpg" alt="">
-                                    </picture>
+                                <div class="swiper-slide gallery__slide" tabindex="0">
+                                    <div class="gallery__card">
+                                        <picture>
+                                            <source media="(min-width: 1441px)" srcset="./img/gbg6.jpg">
+                                            <source media="(min-width: 769px) and (max-width: 1440px)"
+                                                srcset="./img/gbg6-ht.jpg">
+                                            <source media="(min-width: 401px) and (max-width: 768px)"
+                                                srcset="./img/gbg6-t.jpg">
+                                            <source media="(max-width:400px)" srcset="./img/gbg6-m.jpg">
+                                            <img src="./img/gbg6.jpg" alt="">
+                                        </picture>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -381,6 +398,7 @@
                 </div>
             </div>
         </section>
+
         <section id="cat" class="cat">
             <div class="container cat__container">
                 <h2 class="cat__title title">Каталог</h2>
@@ -771,63 +789,63 @@
                     <div class="swiper mySwiper4">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="projects__slide">
+                                <div class="projects__slide" tabindex="0" aria-label="Компания партнер">
                                     <div class="projects__card">
                                         <div class="projects__bg pbg1"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="projects__slide">
+                                <div class="projects__slide" tabindex="0" aria-label="Компания партнер">
                                     <div class="projects__card">
                                         <div class="projects__bg pbg2"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="projects__slide">
+                                <div class="projects__slide" tabindex="0" aria-label="Компания партнер">
                                     <div class="projects__card">
                                         <div class="projects__bg pbg3"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="projects__slide">
+                                <div class="projects__slide" tabindex="0" aria-label="Компания партнер">
                                     <div class="projects__card">
                                         <div class="projects__bg pbg4"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="projects__slide">
+                                <div class="projects__slide" tabindex="0" aria-label="Компания партнер">
                                     <div class="projects__card">
                                         <div class="projects__bg pbg5"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="projects__slide">
+                                <div class="projects__slide" tabindex="0" aria-label="Компания партнер">
                                     <div class="projects__card">
                                         <div class="projects__bg pbg6"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="projects__slide">
+                                <div class="projects__slide" tabindex="0" aria-label="Компания партнер">
                                     <div class="projects__card">
                                         <div class="projects__bg pbg7"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="projects__slide">
+                                <div class="projects__slide" tabindex="0" aria-label="Компания партнер">
                                     <div class="projects__card">
                                         <div class="projects__bg pbg8"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="projects__slide">
+                                <div class="projects__slide" tabindex="0" aria-label="Компания партнер">
                                     <div class="projects__card">
                                         <div class="projects__bg pbg9"></div>
                                     </div>
@@ -955,6 +973,7 @@
     <script src="js/mapconf.js"></script>
     <script src="js/swiperconf.js"></script>
     <script src="js/tippyconf.js"></script>
+    <script src="js/select.js"></script>
 </body>
 
 </html>
