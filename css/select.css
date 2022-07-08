@@ -75,10 +75,6 @@
     text-overflow: ellipsis;
 }
 
-#dropdown__selected:focus {
-    outline: 1px solid #00c2ff;
-}
-
 .open {
     opacity: 1;
     overflow: auto;
