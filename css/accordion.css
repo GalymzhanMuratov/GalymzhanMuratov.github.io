@@ -185,6 +185,7 @@ summary:active span {
 
 .accordion__link:hover {
     color: var(--activecolor);
+    background-color: transparent;
 }
 
 .accordion__link:focus {
@@ -197,4 +198,5 @@ summary:active span {
     color: var(--activecolor);
     text-decoration: none;
     background: none;
+    background-color: transparent;
 }
