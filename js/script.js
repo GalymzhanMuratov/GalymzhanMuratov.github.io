@@ -1,38 +1,77 @@
 var pic = document.getElementById('cat-img');
 
-function blank() {
-    pic.src = "../img/blank.jpg";
-}
-
-function domi() {
-    pic.src = "../img/cbg.jpg";
-}
-
-document.getElementById('acc1').addEventListener('click', blank);
-document.getElementById('acc2').addEventListener('click', blank);
-document.getElementById('acc3').addEventListener('click', blank);
-document.getElementById('acc4').addEventListener('click', blank);
-document.getElementById('acc5').addEventListener('click', blank);
-document.getElementById('acc6').addEventListener('click', blank);
-document.getElementById('acc7').addEventListener('click', blank);
-document.getElementById('acc8').addEventListener('click', blank);
-document.getElementById('acc9').addEventListener('click', blank);
-document.getElementById('acc10').addEventListener('click', blank);
-document.getElementById('acc11').addEventListener('click', blank);
-document.getElementById('acc12').addEventListener('click', domi);
-document.getElementById('acc13').addEventListener('click', blank);
-document.getElementById('acc14').addEventListener('click', blank);
-document.getElementById('acc15').addEventListener('click', blank);
-document.getElementById('acc16').addEventListener('click', blank);
-document.getElementById('acc17').addEventListener('click', blank);
-document.getElementById('acc18').addEventListener('click', blank);
-document.getElementById('acc19').addEventListener('click', blank);
-document.getElementById('acc20').addEventListener('click', blank);
-document.getElementById('acc21').addEventListener('click', blank);
-document.getElementById('acc22').addEventListener('click', blank);
-document.getElementById('acc23').addEventListener('click', blank);
-document.getElementById('acc24').addEventListener('click', blank);
-
+document.getElementById('acc1').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc2').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc3').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc4').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc5').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc6').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc7').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc8').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc9').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc10').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc11').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc12').addEventListener('click', () => {
+    pic.src = "../img/cbg.jpg"
+});
+document.getElementById('acc13').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc14').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc15').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc16').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc17').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc18').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc19').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc20').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc21').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc22').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc23').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
+document.getElementById('acc24').addEventListener('click', () => {
+    pic.src = "../img/blank.jpg"
+});
 
 $(document).ready(function (event) {
     $('.header__burger').click(function (event) {
