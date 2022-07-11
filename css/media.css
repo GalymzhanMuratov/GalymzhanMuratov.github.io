@@ -154,7 +154,7 @@
     .header__nav.active {
         display: flex;
         width: 100%;
-        height: 686px;
+        height: 668px;
         position: absolute;
         flex-direction: column;
         z-index: 2;

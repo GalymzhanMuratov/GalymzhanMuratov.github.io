@@ -212,12 +212,12 @@ let makeMePretty = document.querySelector(".collapse");
 let accordion = new Collapse(makeMePretty, { accordion: true }).init();
 
 // Toggle accordion behavior
-document.querySelector("#accordion-toggle")
-    .addEventListener("change", function () {
-        this.checked ?
-            accordion.settings.accordion = false :
-            accordion.settings.accordion = true;
-    });
+//document.querySelector("#accordion-toggle")
+//   .addEventListener("change", function () {
+//       this.checked ?
+//            accordion.settings.accordion = false :
+//           accordion.settings.accordion = true;
+//    });
 
 // hoisthoistupwego I'm stuck on a machine with IE11
 function miscPolyfillsForIE() {
