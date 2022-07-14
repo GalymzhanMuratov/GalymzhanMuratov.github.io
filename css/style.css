@@ -479,10 +479,11 @@ button {
   display: block;
   padding-left: 14px;
   padding-top: 11px;
-  height: 40px;
+  height: 29px;
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
+  line-height: 19px;
   color: #fff;
   background-position: center;
   background-size: cover;
@@ -661,16 +662,14 @@ button {
 
 .header__form {
   position: relative;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .header__search {
-  /* position: absolute;
-  height: 22px;
-  width: 22px;
-  left: -32px;
+  position: absolute;
   top: 5px;
-  border: none; */
+  left: -38px;
+  border: none;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -748,6 +747,8 @@ input.input__search::-ms-input-placeholder {
 .asearch__input {
   display: none;
   position: relative;
+  padding-top: 12px;
+  padding-left: 8px;
   border: none;
   background: none;
   text-decoration: underline;

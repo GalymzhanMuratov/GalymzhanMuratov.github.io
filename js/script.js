@@ -87,6 +87,7 @@ $(document).ready(function (event) {
     });
 });
 
+// document.querySelector('.simplebar-content-wrapper').setAttribute('tabindex', -1);
 
 // код из чужой реализации данной работы
 document.addEventListener('DOMContentLoaded', function () {
