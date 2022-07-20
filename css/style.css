@@ -1011,6 +1011,10 @@ input.input__search::-ms-input-placeholder {
   color: #fff;
 }
 
+.gallery__wa {
+  min-width: 0;
+}
+
 .form__radio {
   display: block;
   position: relative;
