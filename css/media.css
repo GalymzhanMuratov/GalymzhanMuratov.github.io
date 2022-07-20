@@ -507,6 +507,14 @@
 
 @media (max-width:768px) {
 
+    .header {
+        min-height: 98px;
+    }
+
+    .header__container {
+        height: 98px;
+    }
+
     .header__burger {
         width: 54px;
         height: 27px;
@@ -556,11 +564,11 @@
     }
 
     .gallery__content1 {
-        margin-bottom: 14px;
+        margin-bottom: 19px;
     }
 
     .gallery__subwrap {
-        height: 82px;
+        height: 77px;
     }
 
     .gallery__btnwrap {
