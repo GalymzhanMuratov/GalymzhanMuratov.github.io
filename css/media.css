@@ -224,11 +224,11 @@
     }
 
     .gallery__select {
-        width: 280px;
+        width: 278px;
     }
 
     .dropdown__list-item, #dropdown__selected {
-        padding: 3px 16px;
+        padding: 4px 16px;
         line-height: 28px;
     }
 
@@ -447,6 +447,14 @@
         padding-bottom: 70px;
     }
 
+    .gallery {
+        padding-bottom: 70px;
+    }
+
+    .gallery__btnwrap {
+        margin-bottom: 30px;
+    }
+
     .gallery-swiper-pagination {
         margin-right: 19px;
     }
@@ -455,6 +463,16 @@
         margin-top: 4px;
         width: 26px;
         height: 26px;
+    }
+
+    .checkmark {
+        top: 11px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .checkmark::after {
+        left: 2px;
     }
 
     .events__txt {
@@ -475,6 +493,10 @@
 
     .location__btn {
         padding: 12px 40px;
+    }
+
+    .footer__logo {
+        padding-top: 10px;
     }
 
     .contacts__link svg {
@@ -808,7 +830,7 @@
     }
 
     .gallery__select {
-        width: 290px;
+        width: 288px;
     }
 
     .gallery__subwrap {
