@@ -830,7 +830,7 @@
     }
 
     .gallery {
-        padding-bottom: 23px;
+        padding-bottom: 34px;
     }
 
     .gallery__label {
@@ -839,6 +839,11 @@
 
     .gallery__select {
         width: 288px;
+    }
+
+    .checkmark::after {
+        top: 3px;
+        left: 3px;
     }
 
     .gallery__subwrap {
@@ -856,18 +861,23 @@
         flex-direction: column-reverse;
     }
 
+    .gallery__wa {
+        position: relative;
+        padding-bottom: 50px;
+    }
+
     .gallery__btnwrap {
-        margin-bottom: 26px;
+        position: absolute;
+        bottom: 15px;
+        left: calc(50% - 64px);
+        margin-bottom: 0;
+        justify-content: center;
     }
 
     .mySwiper2 {
         min-width: 0;
         margin-bottom: 6px;
         max-height: none;
-    }
-
-    .gallery__btnwrap {
-        justify-content: center;
     }
 
     .cat__txt {
