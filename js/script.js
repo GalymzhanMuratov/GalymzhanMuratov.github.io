@@ -83,7 +83,7 @@ $(document).ready(function (event) {
         $('.asearch__input').toggleClass('visible');
         $('.asearch__wrap').toggleClass('temp');
 
-        setTimeout(() => $(".input__search").focus(), 300)
+        // setTimeout(() => $(".input__search").focus(), 300)
     });
 });
 
