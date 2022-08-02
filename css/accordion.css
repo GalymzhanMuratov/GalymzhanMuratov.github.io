@@ -181,6 +181,7 @@ summary:active span {
     color: #000;
     background-color: var(--outlinecolor);
     transform: rotate(180deg);
+    transition: all 0.4s linear;
 }
 
 .accordion__link:hover {

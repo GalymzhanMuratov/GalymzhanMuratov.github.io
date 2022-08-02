@@ -325,7 +325,7 @@ button {
 }
 
 
-.header__bar {
+/* .header__bar {
   z-index: 2;
   width: 100%;
   padding-top: 23px;
@@ -333,7 +333,7 @@ button {
   position: absolute;
   top: 100px;
   background: rgba(0, 0, 0, 0.4);
-}
+} */
 
 .header__wrap {
   width: 100%;
@@ -729,7 +729,7 @@ input.input__search::-ms-input-placeholder {
 
 
 /* adapt search */
-.asearch__wrap {
+.asearch {
   display: none;
   position: relative;
   flex-direction: row-reverse;
@@ -738,7 +738,7 @@ input.input__search::-ms-input-placeholder {
   background-color: #000;
 }
 
-.asearch {
+.asearch__btn {
   display: none;
   background: none;
   z-index: 2;
@@ -1528,7 +1528,7 @@ input.input__search::-ms-input-placeholder {
 
 .location {
   padding: 33px 0;
-  padding-bottom: 23px;
+  padding-bottom: 18px;
   border-top: 1px solid #CACACA;
   border-bottom: 1px solid #CACACA;
 }
@@ -1621,6 +1621,7 @@ input.input__search::-ms-input-placeholder {
 
 .contacts__txt {
   display: block;
+  margin-top: 4px;
   margin-bottom: 6px;
   font-weight: 600;
   font-size: 24px;
@@ -1642,7 +1643,7 @@ input.input__search::-ms-input-placeholder {
   display: block;
   width: 40px;
   height: 40px;
-  padding-top: 4px;
+  /* padding-top: 4px; */
 }
 
 .contacts__link:hover {
@@ -1664,7 +1665,7 @@ input.input__search::-ms-input-placeholder {
 
 .footer {
   height: 93px;
-  padding-top: 47px;
+  padding-top: 50px;
   background-color: #000;
 }
 
@@ -1720,6 +1721,10 @@ input.input__search::-ms-input-placeholder {
   opacity: .35;
   cursor: auto;
   pointer-events: none;
+}
+
+.events-swiper-button-next.swiper-button-disabled, .events-swiper-button-prev.swiper-button-disabled {
+  display: none;
 }
 
 .accordion__link:hover {

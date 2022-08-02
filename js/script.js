@@ -79,9 +79,9 @@ $(document).ready(function (event) {
     });
 });
 $(document).ready(function (event) {
-    $('.asearch').click(function (event) {
+    $('.asearch__btn').click(function (event) {
         $('.asearch__input').toggleClass('visible');
-        $('.asearch__wrap').toggleClass('temp');
+        $('.asearch').toggleClass('temp');
 
         // setTimeout(() => $(".input__search").focus(), 300)
     });
