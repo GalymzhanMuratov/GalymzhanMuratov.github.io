@@ -75,10 +75,10 @@ button {
   --grey: #CACACA;
 }
 
-*:focus {
+/* *:focus {
   outline: 1px solid var(--purple);
-  /* background-color: rgba(194, 131, 243, 0.4); */
-}
+  background-color: rgba(194, 131, 243, 0.4);
+} */
 
 
 ::marker {
@@ -121,7 +121,7 @@ button {
 }
 
 .link:focus {
-
+  outline: 1px solid var(--purple);
   color: #fff;
   background-color: var(--activecolor);
 }
@@ -984,6 +984,7 @@ input.input__search::-ms-input-placeholder {
 }
 
 .gallery-swiper-button-prev:focus, .gallery-swiper-button-next:focus {
+  outline: none;
   border: 2px solid #000;
 }
 
@@ -1663,6 +1664,7 @@ input.input__search::-ms-input-placeholder {
 }
 
 .contacts__link:focus {
+  outline: none;
   opacity: 0.5;
   background: none;
 }
