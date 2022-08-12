@@ -109,6 +109,10 @@ summary {
     transition-timing-function: ease-in;
 }
 
+summary:focus {
+    outline: none;
+}
+
 summary span {
     background: none;
     transition: color 0.2s ease-in, background-color 0.2s ease-in;
@@ -127,6 +131,7 @@ summary span {
     background-color: #ececec;
     /* transform: rotate(90deg); */
     transition: background-color 0.2s linear;
+    transition: transform 0.2s linear;
 }
 
 /* .collapse-init summary::after {
@@ -181,7 +186,6 @@ summary:active span {
     color: #000;
     background-color: var(--outlinecolor);
     transform: rotate(180deg);
-    transition: all 0.4s linear;
 }
 
 .accordion__link:hover {

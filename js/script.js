@@ -142,3 +142,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 })
+
+
+//
+$(document).ready(function (event) {
+    $('.gallery__card,.popup').click(function (event) {
+        $('.popup').toggleClass('act');
+    });
+});

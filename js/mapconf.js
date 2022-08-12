@@ -42,6 +42,7 @@ window.addEventListener('scroll', function () {
                 center: [55.76200123126051, 37.61114912723088],
                 zoom: 14
             });
+            myMap.behaviors.disable('scrollZoom');
             myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
             }, {
                 preset: 'islands#circleIcon',
@@ -50,7 +51,6 @@ window.addEventListener('scroll', function () {
                 myMap.geoObjects
                     .add(myPlacemark)
         };
-
         flag = 1;
     }
 });
